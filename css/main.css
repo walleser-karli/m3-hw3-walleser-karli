@@ -5,7 +5,39 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
+.button {
+  background-color: #f8df1f;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.heading2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
 body {
   color: #050500;
   font-family: "Roboto", sans-serif;
+}
+body main div h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
+body main div h2 em {
+  text-transform: lowercase;
+  font-style: normal;
+}
+body main div h2 span {
+  color: #ee252f;
+}
+body main div button {
+  background-color: #f8df1f;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-transform: uppercase;
+  width: 170px;
+  height: 50px;
 }
