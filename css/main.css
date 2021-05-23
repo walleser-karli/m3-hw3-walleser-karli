@@ -58,9 +58,28 @@ body main div button {
   width: 170px;
   height: 50px;
 }
+body main .banner {
+  position: relative;
+}
 body main .banner #banner-image {
+  display: none;
+}
+body main .banner #banner-mobile {
+  display: block;
   width: 100%;
-  max-width: 1459px;
+  max-width: 414px;
+}
+body main .banner #logo {
+  position: absolute;
+  width: 80%;
+  max-width: 449px;
+  top: 120px;
+  left: 12%;
+}
+body main .banner button {
+  position: absolute;
+  top: 240px;
+  left: 21%;
 }
 body main .burger {
   padding: 20px 5%;
