@@ -21,6 +21,19 @@
   padding: 0;
   border: 0;
 }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 body {
   color: #050500;
   font-family: "Roboto", sans-serif;
@@ -29,6 +42,22 @@ body header {
   background-color: #f8df1f;
   width: 100%;
   height: 100px;
+}
+body header nav {
+  padding: 40px 0;
+  text-align: center;
+}
+body header nav ul {
+  list-style-type: none;
+  display: block;
+}
+body header nav ul li {
+  display: inline;
+  padding-left: 3%;
+}
+body header nav ul li span {
+  text-transform: uppercase;
+  color: #ee252f;
 }
 body main {
   text-align: center;
@@ -105,4 +134,40 @@ body footer img {
   width: 100%;
   max-width: 200px;
   padding: 13px 0;
+}
+@media (min-width: 414px) {
+  body main .banner #banner-mobile {
+    display: none;
+  }
+  body main .banner #banner-image {
+    display: block;
+  }
+  body main .banner button {
+    top: 315px;
+  }
+}
+@media (min-width: 900px) {
+  body main .burger {
+    display: flex;
+    margin: 20px 0;
+  }
+  body main .burger #top-right {
+    width: 40%;
+  }
+  body main .burger #top-left {
+    width: 60%;
+    text-align: left;
+  }
+  body main .bob {
+    display: flex;
+    padding: 40px 0;
+  }
+  body main .bob #bottom-left {
+    width: 40%;
+  }
+  body main .bob #bottom-right {
+    width: 60%;
+    text-align: left;
+    padding-right: 3%;
+  }
 }

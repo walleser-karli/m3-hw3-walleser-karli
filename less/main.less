@@ -21,12 +21,14 @@ body {
         width: 100%;
         height: 100px;
         nav {
+            padding: 40px 0;
+            text-align: center;
             ul {
                 list-style-type: none;
                 display: block;
                 li {
                     display: inline;
-		            // padding: 0 5%;
+                    padding-left: 3%;
                     span {
                         text-transform: uppercase;
                         color: @red;
@@ -113,3 +115,58 @@ body {
         }
     }
 }
+
+// **********************START 414PX MIN-WIDTH MEDIA QUERY****************************
+@media (min-width: 414px) {
+    body {
+        main {
+            .banner {
+                #banner-mobile {
+                    display: none;
+                }
+            
+                #banner-image {
+                    display: block;
+                }
+
+                button {
+                    top: 315px;
+                }
+
+            }
+        }
+    }
+}
+// **********************END 414PX MIN-WIDTH MEDIA QUERY****************************
+
+// **********************START 900PX MIN-WIDTH MEDIA QUERY****************************
+@media (min-width: 900px) {
+    body {
+        main {
+            .burger {
+                display: flex;
+                margin: 20px 0;
+                #top-right {
+                    width: 40%;
+                }
+                #top-left {
+                    width: 60%;
+                    text-align: left;
+                }
+            }
+            .bob {
+                display: flex;
+                padding: 40px 0;
+                #bottom-left {
+                    width: 40%;
+                }
+                #bottom-right {
+                    width: 60%;
+                    text-align: left;
+                    padding-right: 3%;
+                }
+            }
+        }
+    }
+}
+// **********************END 900PX MIN-WIDTH MEDIA QUERY****************************
