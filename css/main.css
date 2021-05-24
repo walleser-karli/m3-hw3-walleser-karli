@@ -37,6 +37,8 @@ summary {
 body {
   color: #050500;
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1224px;
 }
 body header {
   background-color: #f8df1f;
@@ -116,6 +118,7 @@ body main .burger {
 body main .burger img {
   width: 100%;
   max-width: 232px;
+  padding: 23px 0 5px;
 }
 body main .bob {
   background-color: #f3f3f3;
@@ -144,9 +147,25 @@ body footer img {
   }
   body main .banner button {
     top: 315px;
+    left: 35%;
+  }
+}
+@media (min-width: 600px) {
+  body main .banner #logo {
+    left: 21%;
   }
 }
 @media (min-width: 900px) {
+  body header nav {
+    padding: 40px 0 40px 5%;
+    text-align: left;
+  }
+  body main .banner #logo {
+    left: 26%;
+  }
+  body main .banner button {
+    left: 41%;
+  }
   body main .burger {
     display: flex;
     margin: 20px 0;
@@ -169,5 +188,16 @@ body footer img {
     width: 60%;
     text-align: left;
     padding-right: 3%;
+  }
+}
+@media (min-width: 1224px) {
+  body {
+    margin: auto;
+  }
+  body main .banner #logo {
+    left: 33%;
+  }
+  body main .banner button {
+    left: 45%;
   }
 }

@@ -16,6 +16,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
     color: @font-black;
     font-family: @primary-font;
+    width: 100%;
+    max-width: 1224px;
     header {
         background-color: @yellow;
         width: 100%;
@@ -93,6 +95,7 @@ body {
             img {
                 width: 100%;
                 max-width: 232px;
+                padding: 23px 0 5px;
             }
         }
         .bob {
@@ -131,6 +134,7 @@ body {
 
                 button {
                     top: 315px;
+                    left: 35%;
                 }
 
             }
@@ -139,10 +143,38 @@ body {
 }
 // **********************END 414PX MIN-WIDTH MEDIA QUERY****************************
 
+// **********************START 600PX MIN-WIDTH MEDIA QUERY****************************
+@media (min-width: 600px) {
+    body {
+        main {
+            .banner {
+                #logo {
+                    left: 21%;
+                }
+            }
+        }
+    }
+}
+// **********************END 600PX MIN-WIDTH MEDIA QUERY****************************
+
 // **********************START 900PX MIN-WIDTH MEDIA QUERY****************************
 @media (min-width: 900px) {
     body {
+        header {
+            nav {
+                padding: 40px 0 40px 5%;
+                text-align: left;
+            }
+        }
         main {
+            .banner {
+                #logo {
+                    left: 26%;
+                }
+                button {
+                    left: 41%;
+                }
+            }
             .burger {
                 display: flex;
                 margin: 20px 0;
@@ -170,3 +202,21 @@ body {
     }
 }
 // **********************END 900PX MIN-WIDTH MEDIA QUERY****************************
+
+// **********************START 1224PX MIN-WIDTH MEDIA QUERY****************************
+@media (min-width: 1224px) {
+    body {
+        margin: auto;
+        main {
+            .banner {
+                #logo {
+                    left: 33%;
+                }
+                button {
+                    left: 45%;
+                }
+            }
+        }
+    }
+}
+// **********************END 1224PX MIN-WIDTH MEDIA QUERY****************************
