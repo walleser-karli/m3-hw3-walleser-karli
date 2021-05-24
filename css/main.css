@@ -57,8 +57,14 @@ body header nav ul li {
   display: inline;
   padding-left: 3%;
 }
+body header nav ul li a {
+  text-decoration: none;
+  color: #050500;
+}
 body header nav ul li span {
   text-transform: uppercase;
+}
+body header nav ul li span a {
   color: #ee252f;
 }
 body main {
@@ -88,6 +94,10 @@ body main div button {
   text-transform: uppercase;
   width: 170px;
   height: 50px;
+}
+body main div button a {
+  text-decoration: none;
+  color: #050500;
 }
 body main .banner {
   position: relative;
