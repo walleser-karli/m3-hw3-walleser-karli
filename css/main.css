@@ -61,11 +61,17 @@ body header nav ul li a {
   text-decoration: none;
   color: #050500;
 }
+body header nav ul li a:hover {
+  color: #ee252f;
+}
 body header nav ul li span {
   text-transform: uppercase;
 }
 body header nav ul li span a {
   color: #ee252f;
+}
+body header nav ul li span a:hover {
+  color: green;
 }
 body main {
   text-align: center;
@@ -95,9 +101,18 @@ body main div button {
   width: 170px;
   height: 50px;
 }
+body main div button:hover {
+  background-color: #ee252f;
+}
+body main div button:hover a {
+  color: #f3f3f3;
+}
 body main div button a {
   text-decoration: none;
   color: #050500;
+}
+body main div button a:hover {
+  color: #f3f3f3;
 }
 body main .banner {
   position: relative;

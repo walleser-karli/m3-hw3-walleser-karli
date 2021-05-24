@@ -34,11 +34,17 @@ body {
                     a {
                         text-decoration: none;
                         color: @font-black;
+                        &:hover {
+                            color: @red;
+                        }
                     }
                     span {
                         text-transform: uppercase;
                         a {
                             color: @red;
+                            &:hover {
+                                color: green;
+                            }
                         }
                     }
                 }
@@ -67,9 +73,18 @@ body {
                 text-transform: uppercase;
                 width: 170px;
                 height: 50px;
+                &:hover {
+                    background-color: @red;
+                    a {
+                        color: @eggshell;
+                    }
+                }
                 a {
                     text-decoration: none;
                     color: @font-black;
+                    &:hover {
+                        color: @eggshell;
+                    }
                 }
             }
         }
